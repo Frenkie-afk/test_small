@@ -1,0 +1,55 @@
+@import "../css/bootstrap.min.css";
+@import "../css/bootstrap-theme.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+.navbar-default {
+  background-color: transparent;
+  background-image: none;
+  box-shadow: none;
+  border: none;
+}
+
+.navbar-brand {
+  height: unset;
+  padding: 0 0 0 15px;
+  margin-top: 31px;
+}
+
+.navbar-default .navbar-nav > li > a {
+  font-size: 15px;
+  line-height: 15px;
+  color: #484c55;
+  padding: 42px 24px;
+  transition: 0.3s;
+}
+
+.navbar-default .navbar-nav > li {
+  transition: 0.3s;
+  position: relative;
+}
+.navbar-default .navbar-nav > li:after {
+  display: block;
+  content: "";
+  height: 2px;
+  width: 0;
+  background-color: transparent;
+  transition: 0.3s;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.navbar-default .navbar-nav > li:hover {
+  background-color: #f8f9fb;
+}
+.navbar-default .navbar-nav > li:hover:after {
+  width: 100%;
+  background-color: #49cbcd;
+}
+.navbar-default .navbar-nav > li:hover > a {
+  color: #49cbcd;
+}
+
+/*# sourceMappingURL=style.css.map */
