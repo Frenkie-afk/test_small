@@ -1,0 +1,18 @@
+@keyframes ghostIn {
+  0% {
+    bottom: 100%;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+
+@keyframes ghostOut {
+  0% {
+    bottom: 100%;
+  }
+  100% {
+    bottom: 200%;
+  }
+}
