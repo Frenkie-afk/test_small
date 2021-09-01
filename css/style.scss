@@ -69,7 +69,7 @@ img {
   bottom: 50%;
   transform: translateY(50%);
   text-shadow: none;
-  h3 {
+  h1, h2 {
     font-size: 53px;
     line-height: 53px;
     font-weight: $font-bold;
@@ -111,6 +111,7 @@ img {
     &:hover {
       border: 3px solid $main_color;
       border-radius: 0;
+      letter-spacing: 1.5px;
       &:after {
         top: auto;
         height: 100%;
@@ -129,9 +130,7 @@ img {
   opacity: 1;
 }
 
-.carousel-control:focus {
 
-}
 
 .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev {
   width: 51px;
@@ -156,4 +155,105 @@ img {
 }
 
 
+.team {
+  padding: 107px 0;
+}
 
+.team_title {
+  font-size: 42px;
+  color: #4e525d;
+  line-height: 42px;
+  margin-top: 0;
+  margin-bottom: 140px;
+}
+
+.by_team {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  background-color: $grey_color;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 71px;
+}
+
+.team-descr_title {
+  font-size: 22px;
+  line-height: 22px;
+  color: #4e525d;
+  margin-bottom: 14px;
+  margin-top: 0;
+}
+
+
+.team-descr_subtitle, .team-descr_text {
+  font-size: 14px;
+  line-height: 14px;
+  color: #4e525d;
+  margin-bottom: 35px;
+  margin-top: 0;
+}
+
+.team-descr_text {
+  line-height: 25px;
+  margin-bottom: 0;
+}
+
+.subscription {
+  background-color: #f1f1f1;
+  padding: 120px 0 100px;
+  ul {
+    list-style: none;
+    padding: 0;
+    transition: .3s;
+    &:hover {
+      box-shadow: 0 0.5em 0.5em rgba(0,0,0,10%) ;
+      transform: translateY(-0.25em);
+      li:first-of-type {
+        background-color: $main_color;
+      }
+      li:last-of-type {
+        a {
+          background-color: $main_color;
+        }
+      }
+    }
+    li {
+      font-size: 14px;
+      color: #8c9299;
+      line-height: 45px;
+      margin: 1px 0;
+      background-color: $white_color;
+      transition: .3s;
+    }
+    li:first-of-type {
+      background-color: #485460;
+      line-height: 75px;
+      font-size: 26px;
+      color: $white_color;
+      margin: 0;
+    }
+    li:nth-child(2), li:last-of-type {
+      background-color: #f8f9fb;
+      line-height: 75px;
+      font-size: 26px;
+      color: #485460;
+      margin: 0 0 1px 0;
+    }
+    li:last-of-type {
+      line-height: 98px;
+      margin: 1px 0 0 0;
+      a {
+        display: inline-block;
+        color: $white_color;
+        font-size: 17px;
+        line-height: 40px;
+        text-decoration: none;
+        background-color: #788492;
+        min-width: 170px;
+        border-radius: 5px;
+        transition: .3s;
+      }
+    }
+  }
+}
