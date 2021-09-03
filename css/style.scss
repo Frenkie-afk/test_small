@@ -367,6 +367,9 @@ footer {
       text-decoration: none;
     }
   }
+  .form-group {
+    margin-bottom: 31px;
+  }
   .form-control {
     height: 44px;
     color: #c1c1c1;
@@ -375,7 +378,7 @@ footer {
     font-size: 16px;
     border-radius: 4px;
     width: 100%;
-    padding: 6px 12px;
+    padding: 6px 20px;
     outline: none;
     &::placeholder {
       color: #c1c1c1;
@@ -385,9 +388,6 @@ footer {
   textarea.form-control {
     height: 179px;
     resize: none;
-  }
-  .form-group {
-    margin-bottom: 31px;
   }
   .btn-default {
     @extend .subscription-btn;

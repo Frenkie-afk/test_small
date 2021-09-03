@@ -357,6 +357,9 @@ footer span a {
   color: #bface2;
   text-decoration: none;
 }
+footer .form-group {
+  margin-bottom: 31px;
+}
 footer .form-control {
   height: 44px;
   color: #c1c1c1;
@@ -365,7 +368,7 @@ footer .form-control {
   font-size: 16px;
   border-radius: 4px;
   width: 100%;
-  padding: 6px 12px;
+  padding: 6px 20px;
   outline: none;
 }
 footer .form-control::placeholder {
@@ -375,9 +378,6 @@ footer .form-control::placeholder {
 footer textarea.form-control {
   height: 179px;
   resize: none;
-}
-footer .form-group {
-  margin-bottom: 31px;
 }
 footer .btn-default {
   position: relative;
